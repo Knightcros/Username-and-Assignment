@@ -73,7 +73,7 @@ main {
 	margin: 0 auto;
             
 	display: flex;
-	flex-direction: column; 
+	flex-direction: column; /* Mobile-first stack */
 	align-items: center;
 	justify-content: center;
 	gap: 0.5rem;
@@ -143,8 +143,8 @@ a {
 
 button {
 	border-radius: 20px;
-	border: 1px solid #FF4B2B;
-	background-color: #FF4B2B;
+	border: 1px solid #ff602b;
+	background-color: #2bff4e;
 	color: #FFFFFF;
 	font-size: 12px;
 	font-weight: bold;
@@ -164,11 +164,11 @@ button:focus {
 
 button.ghost {
 	background-color: transparent;
-	border-color: #FFFFFF;
+	border-color: #ffffff;
 }
 
 form {
-	background-color: #FFFFFF;
+	background-color: #ffffff;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -187,7 +187,7 @@ input {
 }
 
 .container {
-	background-color: #fff;
+	background-color: #ff602b;
 	border-radius: 10px;
   	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
 			0 10px 10px rgba(0,0,0,0.22);
@@ -248,7 +248,7 @@ input {
 	width: 50%;
 	height: 100%;
 	overflow: hidden;
-	transition: transform 0.6s ease-in-out;
+	transition: transform 0.8s ease-in-out;
 	z-index: 100;
 }
 
@@ -257,13 +257,13 @@ input {
 }
 
 .overlay {
-	background: #FF416C;
-	background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);
-	background: linear-gradient(to right, #FF4B2B, #FF416C);
+	background: #4151ff;
+	background: -webkit-linear-gradient(to right, #f4ff2b, #7a41ff);
+	background: linear-gradient(to right, #792bff, #FF416C);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 0 0;
-	color: #FFFFFF;
+	color: #ffffff;
 	position: relative;
 	left: -100%;
 	height: 100%;
@@ -313,7 +313,7 @@ input {
 }
 
 .social-container a {
-	border: 1px solid #DDDDDD;
+	border: 1px solid #dddddd;
 	border-radius: 50%;
 	display: inline-flex;
 	justify-content: center;
@@ -347,4 +347,3 @@ footer a {
     color: #3c97bf;
     text-decoration: none;
 }
-
